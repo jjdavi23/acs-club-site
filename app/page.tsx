@@ -2,26 +2,73 @@ import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
 import data from '@/data/club-info.json';
 
+
 export default function Home() {
+  const corePillars = [
+    'Apply classroom concepts to real software for the SLU community.',
+    'Build professional habits through collaboration, code review, and ownership.',
+    'Grow career readiness with interview prep, modern tooling, and deployment experience.',
+  ];
+
   return (
     <main className="min-h-screen pt-32 pb-20 px-6 bg-background">
       <Navbar />
       
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto text-center mb-32">
-        <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter italic">
-          BUILD. <span className="text-accent">SHIP.</span> REPEAT.
+        <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight">
+          Applied Computer Science Club at <span className="text-accent">St. Lawrence University</span>
         </h1>
         <p className="text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-          The Applied Computer Science Club. We focus on real-world engineering, 
-          quantitative finance, and building tools that matter.
+          A proposal-driven club focused on real-world software development, technical growth,
+          and student-led projects that create practical value on campus.
         </p>
       </section>
 
-      {/* Projects Gallery */}
-      <section id="projects" className="max-w-6xl mx-auto">
+      {/* Mission */}
+      <section id="mission" className="max-w-6xl mx-auto mb-24">
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-3xl font-bold">Mission</h2>
+          <div className="h-[1px] flex-1 bg-border" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {corePillars.map((pillar) => (
+            <div key={pillar} className="rounded-2xl border border-border bg-surface/45 p-6">
+              <p className="text-muted leading-relaxed">{pillar}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Membership Tracks */}
+      <section id="membership" className="max-w-6xl mx-auto mb-24">
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-3xl font-bold">Membership Tracks</h2>
+          <div className="h-[1px] flex-1 bg-border" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="rounded-2xl border border-border bg-surface/45 p-8">
+            <h3 className="text-2xl font-bold mb-3">General Member</h3>
+            <p className="text-muted leading-relaxed">
+              Open to all students. Join public meetings on topics like Git, data structures,
+              LeetCode strategy, databases, and modern frameworks. No minimum commitment required.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-accent/50 bg-accent-strong/20 p-8">
+            <h3 className="text-2xl font-bold mb-3">Builder Member</h3>
+            <p className="text-muted leading-relaxed">
+              Application-based track for students committed to building semester-long deliverables.
+              Builder Members attend weekly progress meetings, own technical scope, and collaborate
+              toward production-ready results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Builder Series Projects */}
+      <section id="projects" className="max-w-6xl mx-auto mb-24">
         <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-3xl font-bold">Project Showcase</h2>
+          <h2 className="text-3xl font-bold">Builder Series Projects</h2>
           <div className="h-[1px] flex-1 bg-border" />
         </div>
         
@@ -29,6 +76,21 @@ export default function Home() {
           {data.projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
+        </div>
+      </section>
+
+      {/* Upcoming Events */}
+      <section id="events" className="max-w-6xl mx-auto">
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-3xl font-bold">Upcoming Events</h2>
+          <div className="h-[1px] flex-1 bg-border" />
+        </div>
+        <div className="rounded-2xl border border-border bg-surface/45 p-8 text-center">
+          <p className="text-2xl font-bold mb-3">Coming Soon</p>
+          <p className="text-muted max-w-2xl mx-auto">
+            We&apos;re finalizing this semester&apos;s workshops, builder sessions, and speaker events.
+            Check back soon for the full calendar.
+          </p>
         </div>
       </section>
     </main>

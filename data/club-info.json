@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "ArbiTrac",
+      "description": "A full-stack mobile application for arbitrage betting and market analysis.",
+      "tech": ["React Native", "TypeScript", "Node.js"]
+    },
+    {
+      "title": "Monte Carlo Option Pricer",
+      "description": "High-performance financial derivative pricer built in Rust.",
+      "tech": ["Rust", "Finance", "Statistics"]
+    }
+  ]
+}

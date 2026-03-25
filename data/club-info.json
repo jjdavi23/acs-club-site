@@ -1,14 +1,34 @@
 {
   "projects": [
     {
-      "title": "Campus Event Hub",
-      "description": "A full-stack application for SLU clubs and students to post, discover, and RSVP to campus events.",
-      "tech": ["React", "Node.js", "PostgreSQL"]
+      "title": "ArbiTrac",
+      "description": "A Flutter app that identifies sportsbook arbitrage opportunities, validates stake splits, and helps bettors monitor live lines with precision-safe calculations.",
+      "tech": ["Flutter", "Dart", "Riverpod", "Firebase", "Shared Preferences"],
+      "language": "Dart / Flutter",
+      "repoUrl": "https://github.com/Chrisperriello/ArbiTrac",
+      "readmeUrl": "https://github.com/Chrisperriello/ArbiTrac#readme",
+      "members": ["CJ Perriello"],
+      "highlights": [
+        "Supports moneyline, spreads, totals, and outright markets",
+        "Includes a manual arbitrage calculator for decimal and American odds",
+        "Uses Decimal and Rational math utilities for reliable stake and payout calculations",
+        "Provides event detail drill-down, search, and local watchlist persistence"
+      ]
     },
     {
-      "title": "Builder Tools Platform",
-      "description": "An internal project dashboard for planning tasks, tracking ownership, and shipping semester deliverables.",
-      "tech": ["TypeScript", "GitHub", "Testing"]
+      "title": "Monte-Carlo-Pricer",
+      "description": "A high-performance Rust option pricer that uses Monte Carlo simulation with GBM paths, antithetic variates, and parallel execution for efficient pricing.",
+      "tech": ["Rust", "Rayon", "CLI (clap)", "Monte Carlo", "Quant Finance"],
+      "language": "Rust",
+      "repoUrl": "https://github.com/Chrisperriello/Monte-Carlo-Pricer",
+      "readmeUrl": "https://github.com/Chrisperriello/Monte-Carlo-Pricer#readme",
+      "members": ["CJ Perriello"],
+      "highlights": [
+        "Prices European call and put options with stochastic simulation",
+        "Implements antithetic variates to reduce variance and stabilize estimates",
+        "Calculates Delta using finite-difference methods",
+        "Leverages Rayon for multicore parallel path generation"
+      ]
     }
   ]
 }

@@ -14,31 +14,31 @@ export default function Home() {
       photo: '/eboard/cj.jpeg',
       name: 'CJ Perriello',
       contact: 'Contact coming soon',
-      description: 'E-Board member profile and role details coming soon.',
+      description: 'Grand Chud, leader of them all',
     },
     {
       photo: '/eboard/joe.jpeg',
       name: 'Joe Davis',
       contact: 'Contact coming soon',
-      description: 'E-Board member profile and role details coming soon.',
+      description: 'Stinkiest Chud, smells bad',
     },
     {
       photo: '/eboard/seamus.jpeg',
       name: 'Seamus Burke',
       contact: 'Contact coming soon',
-      description: 'E-Board member profile and role details coming soon.',
+      description: 'Co-Chud captian, gets no play what a chud',
     },
     {
       photo: '/eboard/mj.jpeg',
       name: 'MJ Chaho',
       contact: 'Contact coming soon',
-      description: 'E-Board member profile and role details coming soon.',
+      description: 'Might be the def of a chud',
     },
     {
       photo: '/eboard/ian.jpeg',
       name: 'Ian Marks',
       contact: 'Contact coming soon',
-      description: 'E-Board member profile and role details coming soon.',
+      description: 'Not a part of the club just a massive chud',
     },
   ];
 
@@ -55,6 +55,35 @@ export default function Home() {
           A proposal-driven club focused on real-world software development, technical growth,
           and student-led projects that create practical value on campus.
         </p>
+      </section>
+
+      {/* Chud Counsel */}
+      <section id="counsel" className="max-w-6xl mx-auto mb-24">
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-3xl font-bold">Chud Counsel</h2>
+          <div className="h-[1px] flex-1 bg-border" />
+        </div>
+        <div className="overflow-x-auto pb-2">
+          <div className="flex gap-8 min-w-max">
+            {eboardMembers.map((member) => (
+              <article
+                key={member.name}
+                className="w-[380px] rounded-2xl border border-border bg-surface/45 p-7 shrink-0"
+              >
+                <div className="mb-5 h-56 rounded-xl border border-accent/30 bg-accent-strong/20 flex items-center justify-center">
+                   <img
+    src={member.photo}
+    alt={`${member.name} headshot`}
+    className="h-56 w-full rounded-xl object-cover border border-accent/30"
+  />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                <p className="text-base text-accent mb-3">{member.contact}</p>
+                <p className="text-muted leading-relaxed">{member.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Mission */}
@@ -104,35 +133,6 @@ export default function Home() {
           >
             Apply Here
           </a>
-        </div>
-      </section>
-
-      {/* Chud Counsel */}
-      <section id="counsel" className="max-w-6xl mx-auto mb-24">
-        <div className="flex items-center gap-4 mb-8">
-          <h2 className="text-3xl font-bold">Chud Counsel</h2>
-          <div className="h-[1px] flex-1 bg-border" />
-        </div>
-        <div className="overflow-x-auto pb-2">
-          <div className="flex gap-6 min-w-max">
-            {eboardMembers.map((member) => (
-              <article
-                key={member.name}
-                className="w-[320px] rounded-2xl border border-border bg-surface/45 p-6 shrink-0"
-              >
-                <div className="mb-4 h-36 rounded-xl border border-accent/30 bg-accent-strong/20 flex items-center justify-center">
-                   <img
-   src={member.photo}
-   alt={`${member.name} headshot`}
-   className="mb-4 h-36 w-full rounded-xl object-cover border border-accent/30"
- />
-                </div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-sm text-accent mb-3">{member.contact}</p>
-                <p className="text-muted leading-relaxed">{member.description}</p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 

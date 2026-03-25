@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "ArbiTrac",
+      "title": "ArbiTrac (Ongoing)",
       "description": "A Flutter app that identifies sportsbook arbitrage opportunities, validates stake splits, and helps bettors monitor live lines with precision-safe calculations.",
       "tech": ["Flutter", "Dart", "Riverpod", "Firebase", "Shared Preferences"],
       "language": "Dart / Flutter",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "title": "Monte-Carlo-Pricer",
+      "title": "Monte-Carlo-Pricer (Ongoing)",
       "description": "A high-performance Rust option pricer that uses Monte Carlo simulation with GBM paths, antithetic variates, and parallel execution for efficient pricing.",
       "tech": ["Rust", "Rayon", "CLI (clap)", "Monte Carlo", "Quant Finance"],
       "language": "Rust",

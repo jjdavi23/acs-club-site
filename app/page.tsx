@@ -17,16 +17,10 @@ export default function Home() {
       description: 'Founder and President',
     },
     {
-      photo: '/eboard/joe.jpeg',
-      name: 'Joe Davis',
-      contact: 'Contact coming soon',
-      description: 'Cofounder and Head of Backend Development',
-    },
-    {
       photo: '/eboard/seamus.jpeg',
       name: 'Seamus Burke',
       contact: 'Contact coming soon',
-      description: 'Cofounder and Head of End to End Intergration',
+      description: 'Cofounder and Head of Backend Development',
     },
     {
       photo: '/eboard/mj.jpeg',
@@ -34,12 +28,7 @@ export default function Home() {
       contact: 'Contact coming soon',
       description: 'Cofounder and Head of Frontend Development',
     },
-    {
-      photo: '/eboard/ian.jpeg',
-      name: 'Ian Marks',
-      contact: 'Contact coming soon',
-      description: 'Cofounder, Not part of the club',
-    },
+    
   ];
 
   return (

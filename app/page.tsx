@@ -26,7 +26,7 @@ export default function Home() {
       photo: '/eboard/joe.png',
       name: 'Joe Davis',
       contact: 'jdavis23@stlawu.edu',
-      description: 'Cofounder and Head of Software Development'
+      description: 'Vice-President, Cofounder and Head of Software Development'
     },
     {
       photo: '/eboard/mj.jpeg',

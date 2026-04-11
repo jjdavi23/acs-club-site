@@ -30,5 +30,19 @@
         "Leverages Rayon for multicore parallel path generation"
       ]
     }
+    {
+      "title": "Alpine Performance Bridge(Ongoing)",
+      "description": "A Flutter app designed to synchronize real-time alpine racing results with specific equipment profiles, allowing competitive skiers to optimize their performance through integrated trend analysis and visual analytics. ",
+      "tech": ["Flutter", "Dart", "Riverpod", "Firebase", "Shared Preferences"],
+      "language": "Dart / Flutter",
+      "repoUrl": "https://github.com/jjdavi23/Ski-Analytics-Tracker.git",
+      "readmeUrl": "https://github.com/jjdavi23/Ski-Analytics-Tracker#readme",
+      "members": ["Joseph Davis"],
+      "highlights": [
+        "Custom-built interface optimized for concise time-entry",
+        "links raw performance data to specific ski setups for equipment optimization.",
+        "Real-time trend visualization and ranked equipment lists to track session-over-session growth.",
+        "Engineered with a reactive Flutter framework and Riverpod state management for data integrity."
+    }
   ]
 }
